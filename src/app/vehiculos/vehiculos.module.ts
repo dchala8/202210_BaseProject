@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListarVehiculosComponent } from './listar-vehiculos/listar-vehiculos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -9,7 +10,8 @@ import { ListarVehiculosComponent } from './listar-vehiculos/listar-vehiculos.co
     ListarVehiculosComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports: [
     ListarVehiculosComponent
