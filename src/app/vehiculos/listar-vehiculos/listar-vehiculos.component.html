@@ -1,0 +1,43 @@
+<div class="main">
+  <div>
+    <img src="/assets/img/logo.png">
+  </div>
+  <hr>
+  <div class="row">
+    <img src="/assets/img/banner.jpg">
+  </div>
+  <hr>
+  <div class="row">
+    <table class="table tableStyle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Línea</th>
+          <th scope="col">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehiculo of listaVehiculos">
+          <td scope="row"> {{vehiculo.id}} </td>
+          <td> {{vehiculo.marca}} </td>
+          <td> {{vehiculo.linea}} </td>
+          <td> {{vehiculo.modelo}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="row" *ngFor="let marca of listaMarcas; let i = index" [attr.data-index]="i">
+       Total {{marca}}: {{listaInstances[i]}}
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+    <div style="text-align:center;">
+      Contact us: +57 3102105253 - info@tusegundazo.com - @tusegundazo
+    </div>
+  </div>
+  <br/>
+</div>
